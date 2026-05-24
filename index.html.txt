@@ -1,0 +1,659 @@
+
+html_code = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MicroTec Computers - Your trusted computer store and repair center in Daluwakotuwa, Sri Lanka. Sales, repairs, upgrades, and accessories.">
+    <meta name="keywords" content="computer shop, laptop sales, computer repair, gaming PC, accessories, Sri Lanka, Daluwakotuwa">
+    <title>MicroTec Computers | Computer Store & Repair Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">MicroTec</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>MicroTec</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:0762652705" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>076 265 2705</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <i class="fas fa-star"></i>
+                <span>Premium Tech Solutions in Sri Lanka</span>
+            </div>
+            <h1 class="hero-title reveal-up">
+                <span class="gradient-text">MicroTec</span> Computers
+            </h1>
+            <p class="hero-subtitle reveal-up">
+                Your Trusted Computer Store & Repair Center
+            </p>
+            <p class="hero-desc reveal-up">
+                Premium laptops, desktops, gaming rigs, accessories, and expert repair services — all under one roof in Daluwakotuwa.
+            </p>
+            <div class="hero-buttons reveal-up">
+                <a href="tel:0762652705" class="btn btn-primary glow-btn">
+                    <i class="fas fa-phone"></i>
+                    Call Now
+                </a>
+                <a href="#services" class="btn btn-outline">
+                    <i class="fas fa-arrow-down"></i>
+                    View Services
+                </a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1500">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Who We <span class="gradient-text">Are</span></h2>
+                <p class="section-desc">Your local technology partner delivering excellence since day one.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd36b?w=600&h=500&fit=crop" alt="MicroTec Computers Shop" loading="lazy">
+                        <div class="about-img-glow"></div>
+                    </div>
+                    <div class="about-experience">
+                        <div class="exp-number">8+</div>
+                        <div class="exp-text">Years of<br>Excellence</div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3>Premium Technology Solutions for Everyone</h3>
+                    <p>MicroTec Computers is your one-stop destination for all things tech in Daluwakotuwa, Sri Lanka. From cutting-edge laptops and powerful gaming PCs to reliable repair services and genuine accessories — we bring technology closer to you.</p>
+                    <p>Our team of certified technicians ensures every device performs at its peak. Whether you're a student, professional, gamer, or business owner, we have the perfect solution tailored to your needs and budget.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Computer Sales</h4>
+                                <p>Laptops, desktops & workstations</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Expert Repairs</h4>
+                                <p>Hardware & software solutions</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Gaming Builds</h4>
+                                <p>Custom gaming PC assembly</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Accessories</h4>
+                                <p>Parts, peripherals & upgrades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">What We <span class="gradient-text">Offer</span></h2>
+                <p class="section-desc">Comprehensive tech services designed to keep you connected and productive.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptop & Desktop Sales</h3>
+                    <p>Brand new and certified refurbished laptops and desktops from top brands. Business, home, and student models available.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Computer Repairs</h3>
+                    <p>Expert diagnosis and repair for all brands. Screen replacement, motherboard repair, virus removal, and data recovery.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Software Installation</h3>
+                    <p>Operating system installation, driver updates, antivirus setup, office suites, and custom software configurations.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming PC Builds</h3>
+                    <p>Custom-built gaming PCs with RGB lighting, liquid cooling, and top-tier components for ultimate performance.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Accessories & Parts</h3>
+                    <p>Keyboards, mice, monitors, RAM, SSDs, hard drives, cables, and all computer peripherals at competitive prices.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking Solutions</h3>
+                    <p>WiFi setup, router configuration, LAN cabling, network troubleshooting, and home/office network installations.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Products</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Products</span></h2>
+                <p class="section-desc">Hand-picked premium products at unbeatable prices.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card reveal-up">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop" alt="Gaming Laptop" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaming Laptop Pro</h3>
+                        <p class="product-specs">i7 • 16GB RAM • RTX 3060 • 512GB SSD</p>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 285,000</span>
+                            <span class="price-old">Rs. 320,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card reveal-up">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&h=300&fit=crop" alt="Gaming PC" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>RGB Gaming PC</h3>
+                        <p class="product-specs">Ryzen 7 • 32GB • RTX 4070 • 1TB NVMe</p>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 450,000</span>
+                            <span class="price-old">Rs. 495,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card reveal-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=300&fit=crop" alt="Monitor" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>27" 4K Monitor</h3>
+                        <p class="product-specs">4K UHD • 144Hz • IPS • HDR400</p>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 125,000</span>
+                            <span class="price-old">Rs. 145,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card reveal-up">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=300&fit=crop" alt="Keyboard" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mechanical Keyboard</h3>
+                        <p class="product-specs">RGB • Blue Switches • Aluminum</p>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 18,500</span>
+                            <span class="price-old">Rs. 22,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card reveal-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop" alt="Mouse" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaming Mouse</h3>
+                        <p class="product-specs">25K DPI • Wireless • RGB • 8 Buttons</p>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 12,000</span>
+                            <span class="price-old">Rs. 15,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card reveal-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400&h=300&fit=crop" alt="Headset" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaming Headset</h3>
+                        <p class="product-specs">7.1 Surround • Noise Cancel • RGB</p>
+                        <div class="product-price">
+                            <span class="price-current">Rs. 15,500</span>
+                            <span class="price-old">Rs. 18,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">The MicroTec <span class="gradient-text">Advantage</span></h2>
+                <p class="section-desc">Experience the difference with our commitment to quality and customer satisfaction.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal-up">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Trusted Service</h3>
+                    <p>Over 1,500 satisfied customers trust us with their technology needs. We prioritize honesty and transparency in every transaction.</p>
+                </div>
+                <div class="why-card reveal-up">
+                    <div class="why-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Affordable Prices</h3>
+                    <p>Competitive pricing on all products and services. We offer flexible payment options and seasonal discounts to fit your budget.</p>
+                </div>
+                <div class="why-card reveal-up">
+                    <div class="why-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Expert Technicians</h3>
+                    <p>Our certified technicians have years of hands-on experience. Every repair is handled with precision and care.</p>
+                </div>
+                <div class="why-card reveal-up">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Repairs</h3>
+                    <p>Most repairs completed within 24-48 hours. We understand how important your devices are to your daily life.</p>
+                </div>
+            </div>
+            <div class="why-stats reveal-up">
+                <div class="why-stat">
+                    <div class="why-stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="why-stat-number" data-target="1500">0</div>
+                    <div class="why-stat-label">Happy Customers</div>
+                </div>
+                <div class="why-stat">
+                    <div class="why-stat-icon"><i class="fas fa-wrench"></i></div>
+                    <div class="why-stat-number" data-target="3500">0</div>
+                    <div class="why-stat-label">Repairs Done</div>
+                </div>
+                <div class="why-stat">
+                    <div class="why-stat-icon"><i class="fas fa-box"></i></div>
+                    <div class="why-stat-number" data-target="2000">0</div>
+                    <div class="why-stat-label">Products Sold</div>
+                </div>
+                <div class="why-stat">
+                    <div class="why-stat-icon"><i class="fas fa-award"></i></div>
+                    <div class="why-stat-number" data-target="8">0</div>
+                    <div class="why-stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Customers <span class="gradient-text">Say</span></h2>
+                <p class="section-desc">Real reviews from real customers who trust MicroTec Computers.</p>
+            </div>
+            <div class="testimonials-wrapper reveal-up">
+                <div class="testimonials-slider" id="testimonialSlider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"MicroTec fixed my laptop screen in just one day! The price was very reasonable and the service was excellent. Highly recommended for anyone in the area."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SK</div>
+                            <div class="author-info">
+                                <h4>Samantha Kumari</h4>
+                                <span>Student, Negombo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I got my gaming PC built here and it's a beast! The RGB setup looks amazing and performance is top-notch. Best computer shop in Daluwakotuwa for sure."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RP</div>
+                            <div class="author-info">
+                                <h4>Roshan Perera</h4>
+                                <span>Gamer, Wattala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-stroke"></i>
+                        </div>
+                        <p class="testimonial-text">"Great place to buy computer accessories. The staff is knowledgeable and helped me choose the right SSD for my old laptop. Now it runs like new!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">NF</div>
+                            <div class="author-info">
+                                <h4>Nimal Fernando</h4>
+                                <span>Business Owner, Ja-Ela</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"They installed Windows and all drivers on my new desktop. Very professional and quick service. Will definitely come back for any tech needs."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DS</div>
+                            <div class="author-info">
+                                <h4>Dilini Silva</h4>
+                                <span>Teacher, Kochchikade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-btn prev" id="prevTestimonial" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next" id="nextTestimonial" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Contact Us</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-desc">Visit us or reach out — we're here to help with all your tech needs.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Our Shop</h4>
+                            <p>Daluwakotuwa, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:0762652705">076 265 2705</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:info@microtec.lk">info@microtec.lk</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="07X XXX XXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full glow-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container reveal-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.1!2d79.9!3d7.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTInMDAuMCJOIDc5wrA1NCcwMC4wIkU!5e0!3m2!1sen!2slk!4v1" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="MicroTec Computers Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-microchip"></i>
+                        <span>MicroTec</span>
+                    </a>
+                    <p>Your trusted technology partner in Daluwakotuwa, Sri Lanka. Quality products, expert repairs, and exceptional service since day one.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Laptop Sales</a></li>
+                        <li><a href="#services">Computer Repairs</a></li>
+                        <li><a href="#services">Gaming PC Builds</a></li>
+                        <li><a href="#services">Software Installation</a></li>
+                        <li><a href="#services">Networking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-location-dot"></i> Daluwakotuwa, Sri Lanka</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0762652705">076 265 2705</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@microtec.lk">info@microtec.lk</a></p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9AM - 7PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MicroTec Computers. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> in Sri Lanka</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/94762652705" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>'''
+
+with open('/mnt/agents/output/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_code)
+
+print("index.html saved successfully!")
